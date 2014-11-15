@@ -3,7 +3,10 @@
 	padding:0;
 	box-sizing: border-box;
 }
-
+body{
+	//background-color: #f5f8fa;
+	z-index: -1;
+}
 .single-tweet{
 	width:30%;
 	margin:1%;

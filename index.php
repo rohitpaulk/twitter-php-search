@@ -4,9 +4,6 @@
 		<link rel="stylesheet" href="/assets/main.css">
 	</head>
 	<body>
-		<?php
-			echo "Greetings, program!";
-		?>
 		<div id="tweetbox">
 		</div>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
