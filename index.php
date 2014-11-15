@@ -1,8 +1,7 @@
 <html>
 	<head>
 		<title>Twitter API Client</title>
-		<link rel="stylesheet" src="/assets/main.css" />
-
+		<link rel="stylesheet" href="/assets/main.css">
 	</head>
 	<body>
 		<?php

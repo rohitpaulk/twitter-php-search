@@ -4,3 +4,10 @@
 	box-sizing: border-box;
 }
 
+.single-tweet{
+	width:30%;
+	margin:1%;
+	float:left;
+	min-height: 200px;
+}
+
