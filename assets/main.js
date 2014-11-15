@@ -4,7 +4,8 @@ $(document).ready(function () {
 			$.each(data, function(key, value){
 				$('#tweetbox').append("<div id='" + key + "' class='single-tweet'></div>");
 				twttr.widgets.createTweet(key, document.getElementById(key), {
-					cards: 'hidden'
+					cards: 'hidden',
+					conversation: 'none'
 				});
 			});
 		});
