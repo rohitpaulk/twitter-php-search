@@ -11,12 +11,15 @@
 	$tweets = [];
 
 	foreach ($search_results as $result){
-
-		if ($result['retweet_count'] > 0){
+		if ($result['retweeted_status'] != ''){
+			// If the result is a RT, we want to find the original tweet.
+			$tweet_id = $result['retweeted_status']['id'];
+			$tweets[$tweet_id] = $result['retweeted_status']['retweet_count'];
+		}
+		elseif ($result['retweet_count'] > 0){
 			$tweet_id = $result['id'];
 			$tweets[$tweet_id] = $result['retweet_count'];
 		}
-
 	}
 
 	arsort($tweets);
