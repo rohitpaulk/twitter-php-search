@@ -11,7 +11,7 @@
 	$tweets = [];
 
 	foreach ($search_results as $result){
-		if ($result['retweeted_status'] != ''){
+		if (array_key_exists('retweeted_status', $result)) {
 			// If the result is a RT, we want to find the original tweet.
 			$tweet_id = $result['retweeted_status']['id'];
 			$tweets[$tweet_id] = $result['retweeted_status']['retweet_count'];
@@ -22,7 +22,9 @@
 		}
 	}
 
+	// Most RTed statuses first!
 	arsort($tweets);
+
 	header('Content-Type: application/json');
 	echo json_encode($tweets);
 ?>
