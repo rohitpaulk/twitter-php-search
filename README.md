@@ -8,7 +8,7 @@ A small PHP app that displays popular tweets related to a keyword.
 
 ### Prerequisites
 
-- Create a twitter app at https://apps.twitter.com/, and make sure you have your `CONSUMER_KEY` and `CONSUMER_SECRET` ready.
+- Create a twitter app at [https://apps.twitter.com/](https://apps.twitter.com/), and make sure you have your `CONSUMER_KEY` and `CONSUMER_SECRET` ready.
 - Install [Foreman](https://github.com/ddollar/foreman) if you haven't already.
 
 ### Local Setup
@@ -42,7 +42,8 @@ This *should* work on any other PHP hosting setup, provided that the correct env
 
 ## Improvements
 
-- Cache access tokens
+- Add a loading indicator
+- Store access tokens
 - Cache tweet data
 - Improve styling for larger screens (>1366px wide)
 - Minor styling glitches related to height of elements.
