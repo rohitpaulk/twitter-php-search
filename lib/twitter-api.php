@@ -71,3 +71,5 @@ class TwitterClient
     	return json_decode($json, true)['statuses'];
     }
 }
+
+?>
